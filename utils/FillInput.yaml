@@ -1,0 +1,5 @@
+appId: ${APP_ID}
+---
+# Toca no campo desejado e insere texto
+- tapOn: ${FIELD_ID}
+- inputText: ${FIELD_VALUE}

@@ -1,0 +1,18 @@
+appId: ${APP_ID}
+tags:
+  - search
+  - smoke
+  - regression
+---
+- tapOn:
+    id: home
+
+- runFlow:
+    file: ../utils/FillInput.yaml
+    env:
+      FIELD_ID: 'busque aqui seu produto'
+      FIELD_VALUE: 'HQS60NKHM'
+
+- pressKey: Enter
+
+- tapOn: comprar

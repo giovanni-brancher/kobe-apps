@@ -1,0 +1,12 @@
+appId: ${APP_ID}
+---
+# Fecha o pop-up se visível.
+- extendedWaitUntil:
+    visible:
+      id: ${ID}
+    timeout: ${TIMEOUT}
+    optional: true
+
+- tapOn:
+    id: ${ID}
+    optional: true

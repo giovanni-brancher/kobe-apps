@@ -1,0 +1,11 @@
+appId: ${APP_ID}
+tags:
+  - cart
+  - smoke
+  - regression
+---
+- runFlow:
+    file: LoginFlow.yaml
+
+- runFlow:
+    file: SearchFlow.yaml

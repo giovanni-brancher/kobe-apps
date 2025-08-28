@@ -1,0 +1,52 @@
+appId: ${APP_ID}
+tags:
+  - login
+  - smoke
+  - regression
+---
+# Inicializa o app
+- launchApp:
+    clearState: true # Limpa o 'estado' atual antes de iniciar.
+    stopApp: true # O app é parado se estiver executando.
+    permissions: { all: allow } # Concede todas permissões para execução.
+
+# Toca no botão "Conta".
+- tapOn:
+    id: account # ID é mais confiável que busca por texto (mesma tese para os demais comandos).
+
+# Toca no botão "Entrar com e-mail".
+- tapOn:
+    id: Entrar com e-mail
+
+# Toca no botão "Entrar com e-mail".
+- tapOn:
+    id: Entrar com e-mail e senha
+
+# Preenche o campo "E-mail".
+- runFlow:
+    file: ../utils/FillInput.yaml
+    env:
+      FIELD_ID: 'E-mail'
+      FIELD_VALUE: ${EMAIL}
+
+# Preenche o campo "Senha".
+- runFlow:
+    file: ../utils/FillInput.yaml
+    env:
+      FIELD_ID: 'Senha'
+      FIELD_VALUE: ${PASSWORD}
+
+# Clica em "Entrar".
+- tapOn:
+    id: Entrar
+
+# Verifica se "Meus Pedidos" está visível
+- assertVisible:
+    id: account_open_orders
+
+# Fecha a propaganda se visível.
+- runFlow:
+    file: ../utils/CloseAds.yaml
+    env:
+      ID: wrap-close-button-1454703513201
+      TIMEOUT: '30000' # Espera 30 segundos no máximo
