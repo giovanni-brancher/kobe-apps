@@ -56,7 +56,7 @@ Esse fluxo é essencial para o negócio, pois representa o caminho crítico até
 
 ---
 
-### CT01: Login com credenciais válidas
+### <div id="ct01-login-com-credenciais-validas">CT01</div>: Login com credenciais válidas
 - **Pré-condição:** O usuário já possui uma conta cadastrada.
 - **Passos:**
   - Abrir o app.
