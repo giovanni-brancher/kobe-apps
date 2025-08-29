@@ -165,4 +165,11 @@ Definindo variáveis de ambiente no Maestro Studio.
   - Clicar novamente no botão "adicionar e ir para a cesta".
 - **Resultado Esperado:** O produto `HQS60NKHM` aparecerá no cesto com a quantidade incrementada (+1).
 
+
+## 🎥 Vídeos Demonstrativos
+
+Você pode acessar todos os vídeos demonstrativos através do link abaixo:
+
+👉 [Acessar vídeos no Google Drive](https://drive.google.com/drive/folders/11O5YSp23GKLFY_ClVbIOiQop4D1DdEeq?usp=drive_link)
+
 </div>
