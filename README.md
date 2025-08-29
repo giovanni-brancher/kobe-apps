@@ -1,19 +1,20 @@
+<div align="justify">
+
 # 📌 Desafio Técnico - Planejamento e Casos de Teste
 
 ## 🎯 Objetivo
-<div align="justify">O presente projeto tem como finalidade evidenciar minhas competências técnicas e analíticas, por meio do planejamento estruturado e da documentação detalhada de cenários de teste, assegurando clareza, organização e qualidade.</div>
+O presente projeto tem como finalidade evidenciar minhas competências técnicas e analíticas, por meio do planejamento estruturado e da documentação detalhada de cenários de teste, assegurando clareza, organização e qualidade.
 
 ## 🚀 Jornada do Usuário
-Fluxo escolhido: **Login → Seleção de Produto → Adição ao Cesto**
+Aplicativo: <b>Americanas</b>
 
-**Descrição:** 
-<div align="justify">O usuário acessa o aplicativo, realiza login com credenciais válidas (e-mail e senha), navega para a tela inicial, pesquisa um determinado produto pela caixa de busca, seleciona o item e o adiciona ao cesto de compras.</div>
+Fluxo escolhido: <b>Login → Seleção de Produto → Adição ao Cesto</b>
 
-Esse fluxo é essencial para o negócio, pois representa o caminho crítico até a conversão.
+<p>O usuário acessa o aplicativo, realiza login com credenciais válidas (e-mail e senha), navega para a tela inicial, pesquisa um determinado produto pela caixa de busca, seleciona o item e o adiciona ao cesto de compras.</p>
 
-## 🧪 Casos de Teste
+<p>Esse fluxo é essencial para o negócio, pois representa o caminho crítico até a conversão.</p>
 
-### Resumo Visual dos Cenários de Teste
+## 🧪 Resumo Visual dos Cenários de Teste
 
 <table>
   <tr>
@@ -23,31 +24,31 @@ Esse fluxo é essencial para o negócio, pois representa o caminho crítico até
     <th>Tipo</th>
   </tr>
   <tr>
-    <td><a href="#ct01-login-com-credenciais-validas">CT01</a></td>
+    <td><a href="#ct01">CT01</a></td>
     <td>Login com credenciais válidas</td>
     <td>Usuário autenticado</td>
     <td>🟢 Sucesso</td>
   </tr>
   <tr>
-    <td><a href="#ct02-login-com-credenciais-inválidas">CT02</a></td>
+    <td><a href="#ct02">CT02</a></td>
     <td>Login com credenciais inválidas</td>
     <td>Mensagem de erro exibida</td>
     <td>🔴 Falha</td>
   </tr>
   <tr>
-    <td><a href="#ct03-selecionar-um-produto">CT03</a></td>
+    <td><a href="#ct03">CT03</a></td>
     <td>Selecionar um produto</td>
     <td>Tela de detalhes exibida</td>
     <td>🟢 Sucesso</td>
   </tr>
   <tr>
-    <td><a href="#ct04-adicionar-produto-ao-cesto">CT04</a></td>
+    <td><a href="#ct04">CT04</a></td>
     <td>Adicionar produto ao cesto</td>
     <td>Produto adicionado ao cesto</td>
     <td>🟢 Sucesso</td>
   </tr>
   <tr>
-    <td><a href="#ct05-adicionar-mesmo-produto-mais-de-uma-vez">CT05</a></td>
+    <td><a href="#ct05">CT05</a></td>
     <td>Adicionar mesmo produto mais de uma vez</td>
     <td>Quantidade incrementada (+1)</td>
     <td>🟢 Sucesso</td>
@@ -56,7 +57,20 @@ Esse fluxo é essencial para o negócio, pois representa o caminho crítico até
 
 ---
 
-### <div id="ct01-login-com-credenciais-validas">CT01: Login com credenciais válidas</div>
+## ⚙️ Variáveis de Ambiente
+
+Para executar os testes automatizados no aplicativo das Americanas, utilizei algumas variáveis de ambiente, garantindo flexibilidade e segurança:
+
+| Variável | Descrição | Exemplo |
+|----------|-----------|---------|
+| `APP_ID` | Identificador do aplicativo | com.b2w.americanas |
+| `EMAIL` | E-mail de teste do usuário | testes.kobe.gbrancher@gmail.com |
+| `PASSWORD` | Senha de teste do usuário | DesafioKobe@2025 |
+| `PRODUCT_CODE` | Código do produto a ser pesquisado | HQS60NKHM |
+
+---
+
+### <div id="ct01">📝 CT01: Login com credenciais válidas</div>
 - **Pré-condição:** O usuário já possui uma conta cadastrada.
 - **Passos:**
   - Abrir o app.
@@ -70,7 +84,7 @@ Esse fluxo é essencial para o negócio, pois representa o caminho crítico até
 
 ---
 
-### CT02: Login com credenciais inválidas
+### <div id="ct02">📝 CT02: Login com credenciais inválidas</div>
 - **Pré-condição:** O usuário digita uma senha incorreta.
 - **Passos:**
   - Abrir o app.
@@ -84,7 +98,7 @@ Esse fluxo é essencial para o negócio, pois representa o caminho crítico até
 
 ---
 
-### CT03: Selecionar um produto
+### <div id="ct03">📝 CT03: Selecionar um produto</div>
 - **Pré-condição:** O usuário está logado.
 - **Passos:**
   - Na tela Home, informar no campo de busca: `HQS60NKHM` (modelo de smart tv).
@@ -94,7 +108,7 @@ Esse fluxo é essencial para o negócio, pois representa o caminho crítico até
 
 ---
 
-### CT04: Adicionar produto ao cesto
+### <div id="ct04">📝 CT04: Adicionar produto ao cesto</div>
 - **Pré-condição:** O usuário está logado.
 - **Passos:**
   - Na tela Home, informar no campo de busca: `HQS60NKHM` (modelo de smart tv).
@@ -106,7 +120,7 @@ Esse fluxo é essencial para o negócio, pois representa o caminho crítico até
 
 ---
 
-### CT05: Adicionar mesmo produto mais de uma vez
+### <div id="ct05">📝 CT05: Adicionar mesmo produto mais de uma vez</div>
 - **Pré-condição:** O usuário está logado e o produto já está no cesto.
 - **Passos:**
   - Na tela Home, informar no campo de busca: `HQS60NKHM` (modelo de smart tv).
@@ -115,3 +129,5 @@ Esse fluxo é essencial para o negócio, pois representa o caminho crítico até
   - Clicar no botão "comprar".
   - Clicar novamente no botão "adicionar e ir para a cesta".
 - **Resultado Esperado:** O produto `HQS60NKHM` aparecerá no cesto com a quantidade incrementada (+1).
+
+</div>
