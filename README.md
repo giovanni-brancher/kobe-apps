@@ -26,31 +26,31 @@ Esse fluxo é essencial para o negócio, pois representa o caminho crítico até
     <td><a href="#ct01-login-com-credenciais-validas">CT01</a></td>
     <td>Login com credenciais válidas</td>
     <td>Usuário autenticado</td>
-    <td>🟢 Positivo</td>
+    <td>🟢 Sucesso</td>
   </tr>
   <tr>
     <td><a href="#ct02-login-com-credenciais-inválidas">CT02</a></td>
     <td>Login com credenciais inválidas</td>
     <td>Mensagem de erro exibida</td>
-    <td>🔴 Negativo</td>
+    <td>🔴 Falha</td>
   </tr>
   <tr>
     <td><a href="#ct03-selecionar-um-produto">CT03</a></td>
     <td>Selecionar um produto</td>
     <td>Tela de detalhes exibida</td>
-    <td>🟢 Positivo</td>
+    <td>🟢 Sucesso</td>
   </tr>
   <tr>
     <td><a href="#ct04-adicionar-produto-ao-cesto">CT04</a></td>
     <td>Adicionar produto ao cesto</td>
     <td>Produto adicionado ao cesto</td>
-    <td>🟢 Positivo</td>
+    <td>🟢 Sucesso</td>
   </tr>
   <tr>
     <td><a href="#ct05-adicionar-mesmo-produto-mais-de-uma-vez">CT05</a></td>
     <td>Adicionar mesmo produto mais de uma vez</td>
     <td>Quantidade incrementada (+1)</td>
-    <td>🟢 Positivo</td>
+    <td>🟢 Sucesso</td>
   </tr>
 </table>
 
