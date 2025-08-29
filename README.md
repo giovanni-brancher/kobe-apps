@@ -137,7 +137,7 @@ Definindo variáveis de ambiente no Maestro Studio.
 ### <div id="ct04">📝 CT04: Acessar detalhes de um produto sem sucesso</div>
 - **Pré-condição:** O usuário está logado.
 - **Passos:**
-  - Na tela Home, informar no campo de busca: `ProdutoInexistente`.
+  - Na tela Home, informar no campo de busca: `teste123cba`.
   - Clicar no botão "enter" do teclado.
 - **Resultado Esperado:** Nenhum resultado deverá ser encontrado.
 - 
