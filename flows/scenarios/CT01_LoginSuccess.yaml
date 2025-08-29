@@ -1,0 +1,54 @@
+appId: ${APP_ID}
+name: CT01 - Login com credenciais válidas
+tags:
+  - login:success
+  - smoke
+  - regression
+
+---
+- runFlow:
+    file: ../../helpers/loginHelper.yaml
+    label: Realizando login do usuário
+    env:
+      INPUT_EMAIL: ${EMAIL}
+      INPUT_PASSWORD: ${PASSWORD}
+
+- assertVisible:
+    label: Opção "Meus Pedidos" está visível.
+    id: account_open_orders
+
+- assertVisible:
+    label: Opção "Editar dados pessoais" está visível.
+    id: account_open_editProfile
+
+- assertVisible:
+    label: Opção "Alterar senha" está visível.
+    id: account_open_resetPassword
+
+- assertVisible:
+    label: Opção "Meus endereços" está visível.
+    id: account_open_address
+
+- assertVisible:
+    label: Opção "Cartões cadastrados" está visível.
+    id: account_open_paymentCards
+
+- assertVisible:
+    label: Opção "Gerenciar permissões" está visível.
+    id: account_open_manageConsent
+
+- assertVisible:
+    label: Opção "Favoritos" está visível.
+    id: account_open_shoppingList
+
+- swipe:
+    label: Rolando a tela para cima.
+    direction: UP
+
+- assertVisible:
+    label: Botão "Sair" está visível.
+    text: Sair
+
+- assertVisible:
+    label: Empresa desenvolvedora "Kobe" está visível.
+    text: 'Desenvolvido por Kobe v12.48.0'

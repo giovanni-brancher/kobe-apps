@@ -1,0 +1,38 @@
+appId: ${APP_ID}
+name: CT05 - Adicionar produto ao cesto
+tags:
+  - product:failure
+  - smoke
+  - regression
+env:
+  PRODUCT_CODE: HQS60NKHM
+
+---
+- runFlow:
+    file: CT03_ProductSelectionSuccess.yaml
+    label: Realizando login do usuário
+    env:
+      INPUT_EMAIL: ${EMAIL}
+      INPUT_PASSWORD: ${PASSWORD}
+
+- tapOn:
+    id: Comprar agora
+
+- tapOn:
+    label: Clicando em "adicionar e continuar comprando".
+    id: adicionar e continuar comprando
+
+- tapOn:
+    label: Acessando a cesta de compras.
+    id: Carrinho
+
+- assertVisible:
+    id: Card Produto
+
+- assertVisible:
+    label: O produto está visível na cesta.
+    text: '.*${PRODUCT_CODE}.*'
+
+- assertVisible:
+    label: O pedido pode ser fechado.
+    id: Fechar pedido

@@ -1,11 +1,15 @@
 appId: ${APP_ID}
+name: Cesto de compras.
 tags:
   - cart
   - smoke
   - regression
+
 ---
 - runFlow:
-    file: LoginFlow.yaml
+    label: CT05 - Adicionar produto ao cesto
+    file: scenarios/CT05_AddProductToCartSuccess.yaml
 
 - runFlow:
-    file: SearchFlow.yaml
+    label: CT06 - Adicionar mesmo produto mais de uma vez
+    file: scenarios/CT06_AddAnotherProductToCartSuccess.yaml

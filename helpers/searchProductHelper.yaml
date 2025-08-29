@@ -1,0 +1,11 @@
+appId: ${APP_ID}
+---
+# Busca o produto pela campo de pesquisa.
+- runFlow:
+    label: Buscando o produto na loja.
+    file: inputHelper.yaml
+    env:
+      FIELD_ID: 'busque aqui seu produto'
+      FIELD_VALUE: ${PRODUCT_CODE}
+
+- pressKey: Enter

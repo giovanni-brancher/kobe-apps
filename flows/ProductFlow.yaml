@@ -1,0 +1,15 @@
+appId: ${APP_ID}
+name: Produtos vendidos pelo aplicativo.
+tags:
+  - product
+  - smoke
+  - regression
+
+---
+- runFlow:
+    label: CT03 - Selecionar um produto com sucesso.
+    file: scenarios/CT03_ProductSelectionSuccess.yaml
+
+- runFlow:
+    label: CT04 - Selecionar um produto sem sucesso.
+    file: scenarios/CT04_ProductSelectionFailure.yaml

@@ -1,0 +1,33 @@
+appId: ${APP_ID}
+name: CT03 - Selecionar um produto com sucesso.
+tags:
+  - product:failure
+  - smoke
+  - regression
+env:
+  PRODUCT_CODE: HQS60NKHM
+
+---
+- runFlow:
+    file: ../../helpers/loginHelper.yaml
+    label: Realizando login do usuário
+    env:
+      INPUT_EMAIL: ${EMAIL}
+      INPUT_PASSWORD: ${PASSWORD}
+
+- tapOn:
+    label: Clicando no botão "Home".
+    id: home
+
+- runFlow:
+    file: ../../helpers/searchProductHelper.yaml
+    env:
+      PRODUCT_CODE: ${PRODUCT_CODE}
+
+- tapOn:
+    label: Clicando no produto.
+    text: '.*${PRODUCT_CODE}.*'
+
+- assertVisible:
+    label: Os detalhes do produto está visível.
+    text: '.*${PRODUCT_CODE}.*'

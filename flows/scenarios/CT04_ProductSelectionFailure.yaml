@@ -1,0 +1,33 @@
+appId: ${APP_ID}
+name: CT04 - Selecionar um produto sem sucesso.
+tags:
+  - product:failure
+  - smoke
+  - regression
+env:
+  PRODUCT_CODE: teste123cba
+
+---
+- runFlow:
+    file: ../../helpers/loginHelper.yaml
+    label: Realizando login do usuário
+    env:
+      INPUT_EMAIL: ${EMAIL}
+      INPUT_PASSWORD: ${PASSWORD}
+
+- tapOn:
+    label: Clicando no botão "Home".
+    id: home
+
+- runFlow:
+    file: ../../helpers/searchProductHelper.yaml
+    env:
+      PRODUCT_CODE: ${PRODUCT_CODE}
+
+- assertVisible:
+    label: Indicando que nenhum resultado foi encontrado.
+    text: Ops! Nenhum resultado encontrado
+
+- assertVisible:
+    label: Sugerindo correção de ortografia ou pesquisa por outro termo.
+    text: Verifique se a ortografia está correta ou tente pesquisar outro termo.

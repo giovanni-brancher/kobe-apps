@@ -1,0 +1,58 @@
+appId: ${APP_ID}
+name: CT02 - Login com credenciais inválidas
+tags:
+  - login:failure
+  - smoke
+  - regression
+
+---
+- runFlow:
+    label: Realizando login do usuário
+    file: ../../helpers/loginHelper.yaml
+    env:
+      INPUT_EMAIL: ${EMAIL}
+      INPUT_PASSWORD: 'SenhaErrada'
+
+- assertVisible:
+    label: Mensagem de senha inválida está visível.
+    text: Insira uma senha válida
+
+- assertNotVisible:
+    label: Opção "Meus Pedidos" está visível.
+    id: account_open_orders
+
+- assertNotVisible:
+    label: Opção "Editar dados pessoais" está visível.
+    id: account_open_editProfile
+
+- assertNotVisible:
+    label: Opção "Alterar senha" está visível.
+    id: account_open_resetPassword
+
+- assertNotVisible:
+    label: Opção "Meus endereços" está visível.
+    id: account_open_address
+
+- assertNotVisible:
+    label: Opção "Cartões cadastrados" está visível.
+    id: account_open_paymentCards
+
+- assertNotVisible:
+    label: Opção "Gerenciar permissões" está visível.
+    id: account_open_manageConsent
+
+- assertNotVisible:
+    label: Opção "Favoritos" está visível.
+    id: account_open_shoppingList
+
+- swipe:
+    label: Rolando a tela para cima.
+    direction: UP
+
+- assertNotVisible:
+    label: Botão "Sair" está visível.
+    text: Sair
+
+- assertNotVisible:
+    label: Empresa desenvolvedora "Kobe" está visível.
+    text: 'Desenvolvido por Kobe v12.48.0'

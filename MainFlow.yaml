@@ -1,6 +1,13 @@
-# ID do aplicativo definido via variável de ambiente (${APP_ID}),
-# permitindo alternar facilmente entre diferentes versões do app (ex.: produção, homologação, testes).
+# ID do app definido via variável de ambiente, permitindo alternar facilmente
+# entre diferentes versões do app (ex.: produção, homologação, testes).
 appId: ${APP_ID}
+
 ---
+- runFlow:
+    file: flows/LoginFlow.yaml
+
+- runFlow:
+    file: flows/ProductFlow.yaml
+
 - runFlow:
     file: flows/CartFlow.yaml

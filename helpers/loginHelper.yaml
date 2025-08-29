@@ -1,0 +1,48 @@
+# Parâmetros do flow:
+#  - INPUT_EMAIL
+#  - INPUT_PASSWORD
+
+appId: ${APP_ID}
+---
+- launchApp:
+    label: Inicializando aplicativo.
+    clearState: true
+    stopApp: true
+    permissions: { all: allow }
+
+- tapOn:
+    label: Clicando no botão "Conta".
+    id: account # ID é mais confiável que busca por texto (mesma tese para os demais comandos).
+
+- tapOn:
+    label: Clicando no link "Entrar com e-mail".
+    id: Entrar com e-mail
+
+- tapOn:
+    label: Clicando no botão "Entrar com e-mail e senha".
+    id: Entrar com e-mail e senha
+
+- runFlow:
+    label: Informando o e-mail
+    file: inputHelper.yaml
+    env:
+      FIELD_ID: 'E-mail'
+      FIELD_VALUE: ${INPUT_EMAIL}
+
+- runFlow:
+    label: Informando a senha
+    file: inputHelper.yaml
+    env:
+      FIELD_ID: 'Senha'
+      FIELD_VALUE: ${INPUT_PASSWORD}
+
+- tapOn:
+    label: Clicando no botão "Entrar"
+    id: Entrar
+
+- runFlow:
+    label: Fechando o pop-up, se exibido.
+    file: popupHelper.yaml
+    env:
+      ID: wrap-close-button-1454703513201
+      TIMEOUT: '30000' # Espera 30 segundos no máximo.
