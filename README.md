@@ -45,7 +45,7 @@ Fluxo escolhido: <b>Login → Seleção de Produto → Adição ao Cesto</b>
     <td><a href="#ct04">CT04</a></td>
     <td>Acessar detalhes de um produto sem sucesso</td>
     <td>Tela de detalhes exibida</td>
-    <td>🔴 Falha/td>
+    <td>🔴 Falha</td>
   </tr>
   <tr>
     <td><a href="#ct05">CT05</a></td>
