@@ -15,13 +15,44 @@ Esse fluxo é essencial para o negócio, pois representa o caminho crítico até
 
 ### Resumo Visual dos Cenários de Teste
 
-| Código | Cenário | Resultado Esperado | Tipo |
-|--------|---------|------------------|------|
-| [CT01](#ct01-login-com-credenciais-validas) | Login com credenciais válidas | Usuário autenticado e redirecionado para a tela Perfil | 🟢 Positivo |
-| [CT02](#ct02-login-com-credenciais-inválidas) | Login com credenciais inválidas | Mensagem de erro exibida e usuário permanece na tela de Login | 🔴 Negativo |
-| [CT03](#ct03-selecionar-um-produto) | Selecionar um produto | Tela de detalhes do produto exibida | 🟢 Positivo |
-| [CT04](#ct04-adicionar-produto-ao-cesto) | Adicionar produto ao cesto | Produto adicionado ao cesto e exibido na tela Cesta | 🟢 Positivo |
-| [CT05](#ct05-adicionar-mesmo-produto-mais-de-uma-vez) | Adicionar mesmo produto mais de uma vez | Produto no cesto com quantidade incrementada (+1) | 🟢 Positivo |
+<table>
+  <tr>
+    <th>Código</th>
+    <th>Cenário</th>
+    <th>Resultado Esperado</th>
+    <th>Tipo</th>
+  </tr>
+  <tr>
+    <td><a href="#ct01-login-com-credenciais-validas">CT01</a></td>
+    <td>Login com credenciais válidas</td>
+    <td>Usuário autenticado</td>
+    <td>🟢 Positivo</td>
+  </tr>
+  <tr>
+    <td><a href="#ct02-login-com-credenciais-inválidas">CT02</a></td>
+    <td>Login com credenciais inválidas</td>
+    <td>Mensagem de erro exibida</td>
+    <td>🔴 Negativo</td>
+  </tr>
+  <tr>
+    <td><a href="#ct03-selecionar-um-produto">CT03</a></td>
+    <td>Selecionar um produto</td>
+    <td>Tela de detalhes exibida</td>
+    <td>🟢 Positivo</td>
+  </tr>
+  <tr>
+    <td><a href="#ct04-adicionar-produto-ao-cesto">CT04</a></td>
+    <td>Adicionar produto ao cesto</td>
+    <td>Produto adicionado ao cesto</td>
+    <td>🟢 Positivo</td>
+  </tr>
+  <tr>
+    <td><a href="#ct05-adicionar-mesmo-produto-mais-de-uma-vez">CT05</a></td>
+    <td>Adicionar mesmo produto mais de uma vez</td>
+    <td>Quantidade incrementada (+1)</td>
+    <td>🟢 Positivo</td>
+  </tr>
+</table>
 
 ---
 
