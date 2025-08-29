@@ -37,18 +37,24 @@ Fluxo escolhido: <b>Login → Seleção de Produto → Adição ao Cesto</b>
   </tr>
   <tr>
     <td><a href="#ct03">CT03</a></td>
-    <td>Selecionar um produto</td>
+    <td>Acessar detalhes de um produto com sucesso</td>
     <td>Tela de detalhes exibida</td>
     <td>🟢 Sucesso</td>
   </tr>
   <tr>
     <td><a href="#ct04">CT04</a></td>
+    <td>Acessar detalhes de um produto sem sucesso</td>
+    <td>Tela de detalhes exibida</td>
+    <td>🔴 Falha/td>
+  </tr>
+  <tr>
+    <td><a href="#ct05">CT05</a></td>
     <td>Adicionar produto ao cesto</td>
     <td>Produto adicionado ao cesto</td>
     <td>🟢 Sucesso</td>
   </tr>
   <tr>
-    <td><a href="#ct05">CT05</a></td>
+    <td><a href="#ct06">CT06</a></td>
     <td>Adicionar mesmo produto mais de uma vez</td>
     <td>Quantidade incrementada (+1)</td>
     <td>🟢 Sucesso</td>
@@ -118,7 +124,7 @@ Definindo variáveis de ambiente no Maestro Studio.
 
 ---
 
-### <div id="ct03">📝 CT03: Selecionar um produto</div>
+### <div id="ct03">📝 CT03: Acessar detalhes de um produto com sucesso</div>
 - **Pré-condição:** O usuário está logado.
 - **Passos:**
   - Na tela Home, informar no campo de busca: `HQS60NKHM` (modelo de smart tv).
@@ -128,7 +134,16 @@ Definindo variáveis de ambiente no Maestro Studio.
 
 ---
 
-### <div id="ct04">📝 CT04: Adicionar produto ao cesto</div>
+### <div id="ct04">📝 CT04: Acessar detalhes de um produto sem sucesso</div>
+- **Pré-condição:** O usuário está logado.
+- **Passos:**
+  - Na tela Home, informar no campo de busca: `ProdutoInexistente`.
+  - Clicar no botão "enter" do teclado.
+- **Resultado Esperado:** Nenhum resultado deverá ser encontrado.
+- 
+---
+
+### <div id="ct05">📝 CT05: Adicionar produto ao cesto</div>
 - **Pré-condição:** O usuário está logado.
 - **Passos:**
   - Na tela Home, informar no campo de busca: `HQS60NKHM` (modelo de smart tv).
@@ -140,7 +155,7 @@ Definindo variáveis de ambiente no Maestro Studio.
 
 ---
 
-### <div id="ct05">📝 CT05: Adicionar mesmo produto mais de uma vez</div>
+### <div id="ct06">📝 CT06: Adicionar mesmo produto mais de uma vez</div>
 - **Pré-condição:** O usuário está logado e o produto já está no cesto.
 - **Passos:**
   - Na tela Home, informar no campo de busca: `HQS60NKHM` (modelo de smart tv).
