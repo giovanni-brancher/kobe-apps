@@ -18,31 +18,31 @@ tags:
     text: Insira uma senha válida
 
 - assertNotVisible:
-    label: Opção "Meus Pedidos" está visível.
+    label: Opção "Meus Pedidos" não está visível.
     id: account_open_orders
 
 - assertNotVisible:
-    label: Opção "Editar dados pessoais" está visível.
+    label: Opção "Editar dados pessoais" não está visível.
     id: account_open_editProfile
 
 - assertNotVisible:
-    label: Opção "Alterar senha" está visível.
+    label: Opção "Alterar senha" não está visível.
     id: account_open_resetPassword
 
 - assertNotVisible:
-    label: Opção "Meus endereços" está visível.
+    label: Opção "Meus endereços" não está visível.
     id: account_open_address
 
 - assertNotVisible:
-    label: Opção "Cartões cadastrados" está visível.
+    label: Opção "Cartões cadastrados" não está visível.
     id: account_open_paymentCards
 
 - assertNotVisible:
-    label: Opção "Gerenciar permissões" está visível.
+    label: Opção "Gerenciar permissões" não está visível.
     id: account_open_manageConsent
 
 - assertNotVisible:
-    label: Opção "Favoritos" está visível.
+    label: Opção "Favoritos" não está visível.
     id: account_open_shoppingList
 
 - swipe:
@@ -50,9 +50,9 @@ tags:
     direction: UP
 
 - assertNotVisible:
-    label: Botão "Sair" está visível.
+    label: Botão "Sair" não está visível.
     text: Sair
 
 - assertNotVisible:
-    label: Empresa desenvolvedora "Kobe" está visível.
+    label: Empresa desenvolvedora "Kobe" não está visível.
     text: 'Desenvolvido por Kobe v12.48.0'

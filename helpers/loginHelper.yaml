@@ -45,4 +45,4 @@ appId: ${APP_ID}
     file: popupHelper.yaml
     env:
       ID: wrap-close-button-1454703513201
-      TIMEOUT: '30000' # Espera 30 segundos no máximo.
+      TIMEOUT: '20000' # Espera 30 segundos no máximo.
