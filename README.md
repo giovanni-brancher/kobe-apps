@@ -57,6 +57,19 @@ Fluxo escolhido: <b>Login → Seleção de Produto → Adição ao Cesto</b>
 
 ---
 
+## 🖥️ Pré-requisitos do Ambiente
+
+| Requisito | Detalhes / Valor esperado |
+|-----------|--------------------------|
+| Sistema Operacional (host) |	Windows 10/11, macOS ou Linux |
+| Android (emulador/dispositivo) | Versão 16 ou superior |
+| Dispositivo |	Smartphone físico ou emulador compatível |
+| App em teste | `com.b2w.americanas` (versão 12.48.0 ou superior) |
+| Permissões do app | Todas concedidas para evitar bloqueios em testes automatizados |
+| Ferramenta de automação | Maestro.dev versão 2.0 ou superior |
+
+---
+
 ## ⚙️ Variáveis de Ambiente
 
 Para executar os testes automatizados no aplicativo das Americanas, utilizei algumas variáveis de ambiente, garantindo flexibilidade e segurança:
