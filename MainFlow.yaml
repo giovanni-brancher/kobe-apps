@@ -3,9 +3,9 @@
 appId: ${APP_ID}
 
 ---
-# - runFlow:
-#     file: flows/LoginFlow.yaml
-# - runFlow:
-#     file: flows/ProductFlow.yaml
+- runFlow:
+    file: flows/LoginFlow.yaml
+- runFlow:
+    file: flows/ProductFlow.yaml
 - runFlow:
     file: flows/CartFlow.yaml
