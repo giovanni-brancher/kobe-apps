@@ -79,7 +79,6 @@ Para executar os testes automatizados no aplicativo das Americanas, utilizei alg
 | `APP_ID` | Identificador do aplicativo | com.b2w.americanas |
 | `EMAIL` | E-mail de teste do usuário | testes.kobe.gbrancher@gmail.com |
 | `PASSWORD` | Senha de teste do usuário | DesafioKobe@2025 |
-| `PRODUCT_CODE` | Código do produto a ser pesquisado | HQS60NKHM |
 
 **Observações:**  
 - As variáveis de ambiente podem ser definidas em um arquivo .env ou na IDE do Maestro Studio.
