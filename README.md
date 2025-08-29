@@ -14,12 +14,12 @@ Fluxo escolhido: <b>Login → Seleção de Produto → Adição ao Cesto</b>
 
 <p>Esse fluxo é essencial para o negócio, pois representa o caminho crítico até a conversão.</p>
 
-## 🧪 Resumo Visual dos Cenários de Teste
+## 🧪 Resumo dos Casos de Teste
 
 <table>
   <tr>
     <th>Código</th>
-    <th>Cenário</th>
+    <th>Caso de Teste</th>
     <th>Resultado Esperado</th>
     <th>Tipo</th>
   </tr>
@@ -69,6 +69,8 @@ Para executar os testes automatizados no aplicativo das Americanas, utilizei alg
 | `PRODUCT_CODE` | Código do produto a ser pesquisado | HQS60NKHM |
 
 ---
+
+## 🔍 Detalhes dos Casos de Teste
 
 ### <div id="ct01">📝 CT01: Login com credenciais válidas</div>
 - **Pré-condição:** O usuário já possui uma conta cadastrada.
