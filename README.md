@@ -81,6 +81,12 @@ Para executar os testes automatizados no aplicativo das Americanas, utilizei alg
 | `PASSWORD` | Senha de teste do usuário | DesafioKobe@2025 |
 | `PRODUCT_CODE` | Código do produto a ser pesquisado | HQS60NKHM |
 
+**Observações:**  
+- As variáveis de ambiente podem ser definidas em um arquivo .env ou na IDE do Maestro Studio.
+
+![Desktop - Maestro Studio - Desktop - 28 August 2025](https://github.com/user-attachments/assets/3a3aac62-596e-4fe9-8a5d-3c94eeb2736b)
+Definindo variáveis de ambiente no Maestro Studio.
+
 ---
 
 ## 🔍 Detalhes dos Casos de Teste
